@@ -1,0 +1,29 @@
+# EditorConfig 用于在不同的编辑器和 IDE 中统一代码风格
+# 本项目的 EditorConfig 配置文件 (.editorconfig) 应采用 UTF-8 编码，并以 LF 作为行尾换行符
+# 文档: https://editorconfig.org
+# 规范: https://spec.editorconfig.org
+
+# 最顶层的 EditorConfig 配置，不再检查当前配置文件更高目录的 EditorConfig 配置
+root = true
+
+# 所有文件的配置
+[*]
+# 文件编码
+charset = utf-8
+# 缩进风格
+indent_style = space
+# 缩进大小
+indent_size = 2
+# 行尾换行符
+end_of_line = lf
+# 是否去除换行符前的所有空白字符 (是否去除行尾的空格)
+trim_trailing_whitespace = true
+# 文件是否以换行结尾 (是否在文件末尾插入一个空行) ，对空文件不生效
+insert_final_newline = true
+# 强制在指定字符长度后换行，仅部分编辑器和 Prettier 支持
+max_line_length = 100
+
+# Markdown 文件的配置
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = unset
