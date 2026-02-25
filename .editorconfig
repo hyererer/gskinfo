@@ -27,3 +27,8 @@ max_line_length = 100
 [*.md]
 trim_trailing_whitespace = false
 max_line_length = unset
+end_of_line = crlf
+
+# 批处理脚本文件的配置
+[*.{bat,cmd}]
+end_of_line = crlf
